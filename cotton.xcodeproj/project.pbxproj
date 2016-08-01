@@ -113,14 +113,16 @@
 		482164F91D48B2A70091BDF4 /* YFGIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 482163CC1D48B2A60091BDF4 /* YFGIFImageView.m */; };
 		482164FA1D48B2A70091BDF4 /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 482163CE1D48B2A60091BDF4 /* UITabBar+badge.m */; };
 		482164FD1D48B2A70091BDF4 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 482163D41D48B2A60091BDF4 /* UIView+frame.m */; };
-		482165231D48B5430091BDF4 /* QGMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482165211D48B5430091BDF4 /* QGMessageViewController.m */; };
-		482165241D48B5430091BDF4 /* QGMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482165221D48B5430091BDF4 /* QGMessageViewController.xib */; };
-		482165281D48B5550091BDF4 /* QGSupermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482165261D48B5550091BDF4 /* QGSupermarkViewController.m */; };
-		482165291D48B5550091BDF4 /* QGSupermarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482165271D48B5550091BDF4 /* QGSupermarkViewController.xib */; };
-		4821652C1D48B5650091BDF4 /* QGThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4821652B1D48B5650091BDF4 /* QGThirdViewController.m */; };
-		4821652F1D48B58B0091BDF4 /* QGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4821652E1D48B58B0091BDF4 /* QGMineViewController.m */; };
 		482165321D48B8A70091BDF4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 482165311D48B8A70091BDF4 /* libsqlite3.0.tbd */; };
 		751622B31D4F8E48008417AC /* BnsTargetApp.strings in Resources */ = {isa = PBXBuildFile; fileRef = 751622B51D4F8E48008417AC /* BnsTargetApp.strings */; };
+		751622C61D4F93C2008417AC /* QGMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622BA1D4F93C2008417AC /* QGMessageViewController.m */; settings = {ASSET_TAGS = (); }; };
+		751622C71D4F93C2008417AC /* QGMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622BB1D4F93C2008417AC /* QGMessageViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		751622CF1D4F9487008417AC /* QGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622CD1D4F9487008417AC /* QGMineViewController.m */; settings = {ASSET_TAGS = (); }; };
+		751622D01D4F9487008417AC /* QGMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622CE1D4F9487008417AC /* QGMineViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		751622D41D4F94A7008417AC /* QGSupermaketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622D21D4F94A7008417AC /* QGSupermaketViewController.m */; settings = {ASSET_TAGS = (); }; };
+		751622D51D4F94A7008417AC /* QGSupermaketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D31D4F94A7008417AC /* QGSupermaketViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		751622D91D4F94BD008417AC /* QGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622D71D4F94BD008417AC /* QGMapViewController.m */; settings = {ASSET_TAGS = (); }; };
+		751622DA1D4F94BD008417AC /* QGMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D81D4F94BD008417AC /* QGMapViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,20 +357,22 @@
 		482163D41D48B2A60091BDF4 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		482163D51D48B2A60091BDF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Util_AttachmentAdd.strings"; sourceTree = "<group>"; };
 		482163D61D48B2A60091BDF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Util_UFTool.strings"; sourceTree = "<group>"; };
-		482165201D48B5430091BDF4 /* QGMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMessageViewController.h; sourceTree = "<group>"; };
-		482165211D48B5430091BDF4 /* QGMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMessageViewController.m; sourceTree = "<group>"; };
-		482165221D48B5430091BDF4 /* QGMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGMessageViewController.xib; sourceTree = "<group>"; };
-		482165251D48B5550091BDF4 /* QGSupermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGSupermarkViewController.h; sourceTree = "<group>"; };
-		482165261D48B5550091BDF4 /* QGSupermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGSupermarkViewController.m; sourceTree = "<group>"; };
-		482165271D48B5550091BDF4 /* QGSupermarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGSupermarkViewController.xib; sourceTree = "<group>"; };
-		4821652A1D48B5650091BDF4 /* QGThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGThirdViewController.h; sourceTree = "<group>"; };
-		4821652B1D48B5650091BDF4 /* QGThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGThirdViewController.m; sourceTree = "<group>"; };
-		4821652D1D48B58B0091BDF4 /* QGMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMineViewController.h; sourceTree = "<group>"; };
-		4821652E1D48B58B0091BDF4 /* QGMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMineViewController.m; sourceTree = "<group>"; };
 		482165301D48B6620091BDF4 /* AppDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDef.h; sourceTree = "<group>"; };
 		482165311D48B8A70091BDF4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		751622B61D4F8E74008417AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BnsTargetApp.strings; sourceTree = "<group>"; };
 		751622B71D4F8ECB008417AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BnsTargetApp.strings"; sourceTree = "<group>"; };
+		751622B91D4F93C2008417AC /* QGMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMessageViewController.h; sourceTree = "<group>"; };
+		751622BA1D4F93C2008417AC /* QGMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMessageViewController.m; sourceTree = "<group>"; };
+		751622BB1D4F93C2008417AC /* QGMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGMessageViewController.xib; sourceTree = "<group>"; };
+		751622CC1D4F9487008417AC /* QGMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMineViewController.h; sourceTree = "<group>"; };
+		751622CD1D4F9487008417AC /* QGMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMineViewController.m; sourceTree = "<group>"; };
+		751622CE1D4F9487008417AC /* QGMineViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGMineViewController.xib; sourceTree = "<group>"; };
+		751622D11D4F94A7008417AC /* QGSupermaketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGSupermaketViewController.h; sourceTree = "<group>"; };
+		751622D21D4F94A7008417AC /* QGSupermaketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGSupermaketViewController.m; sourceTree = "<group>"; };
+		751622D31D4F94A7008417AC /* QGSupermaketViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGSupermaketViewController.xib; sourceTree = "<group>"; };
+		751622D61D4F94BD008417AC /* QGMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMapViewController.h; sourceTree = "<group>"; };
+		751622D71D4F94BD008417AC /* QGMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMapViewController.m; sourceTree = "<group>"; };
+		751622D81D4F94BD008417AC /* QGMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGMapViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -869,54 +873,53 @@
 		4821651B1D48B3360091BDF4 /* BnsTarget */ = {
 			isa = PBXGroup;
 			children = (
-				4821651C1D48B36B0091BDF4 /* Message */,
-				4821651D1D48B36B0091BDF4 /* Map */,
-				4821651E1D48B36B0091BDF4 /* Supermarket */,
-				4821651F1D48B36B0091BDF4 /* Mine */,
+				751622B81D4F93C2008417AC /* Message */,
+				751622BC1D4F93C2008417AC /* Mine */,
+				751622BF1D4F93C2008417AC /* Supermaket */,
+				751622C31D4F93C2008417AC /* Map */,
 			);
 			path = BnsTarget;
 			sourceTree = "<group>";
 		};
-		4821651C1D48B36B0091BDF4 /* Message */ = {
+		751622B81D4F93C2008417AC /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				482165201D48B5430091BDF4 /* QGMessageViewController.h */,
-				482165211D48B5430091BDF4 /* QGMessageViewController.m */,
-				482165221D48B5430091BDF4 /* QGMessageViewController.xib */,
+				751622B91D4F93C2008417AC /* QGMessageViewController.h */,
+				751622BA1D4F93C2008417AC /* QGMessageViewController.m */,
+				751622BB1D4F93C2008417AC /* QGMessageViewController.xib */,
 			);
-			name = Message;
-			path = first;
+			path = Message;
 			sourceTree = "<group>";
 		};
-		4821651D1D48B36B0091BDF4 /* Map */ = {
+		751622BC1D4F93C2008417AC /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				482165251D48B5550091BDF4 /* QGSupermarkViewController.h */,
-				482165261D48B5550091BDF4 /* QGSupermarkViewController.m */,
-				482165271D48B5550091BDF4 /* QGSupermarkViewController.xib */,
+				751622CC1D4F9487008417AC /* QGMineViewController.h */,
+				751622CD1D4F9487008417AC /* QGMineViewController.m */,
+				751622CE1D4F9487008417AC /* QGMineViewController.xib */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		751622BF1D4F93C2008417AC /* Supermaket */ = {
+			isa = PBXGroup;
+			children = (
+				751622D11D4F94A7008417AC /* QGSupermaketViewController.h */,
+				751622D21D4F94A7008417AC /* QGSupermaketViewController.m */,
+				751622D31D4F94A7008417AC /* QGSupermaketViewController.xib */,
+			);
+			path = Supermaket;
+			sourceTree = "<group>";
+		};
+		751622C31D4F93C2008417AC /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				751622D61D4F94BD008417AC /* QGMapViewController.h */,
+				751622D71D4F94BD008417AC /* QGMapViewController.m */,
+				751622D81D4F94BD008417AC /* QGMapViewController.xib */,
 			);
 			name = Map;
-			path = four;
-			sourceTree = "<group>";
-		};
-		4821651E1D48B36B0091BDF4 /* Supermarket */ = {
-			isa = PBXGroup;
-			children = (
-				4821652A1D48B5650091BDF4 /* QGThirdViewController.h */,
-				4821652B1D48B5650091BDF4 /* QGThirdViewController.m */,
-			);
-			name = Supermarket;
-			path = second;
-			sourceTree = "<group>";
-		};
-		4821651F1D48B36B0091BDF4 /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				4821652D1D48B58B0091BDF4 /* QGMineViewController.h */,
-				4821652E1D48B58B0091BDF4 /* QGMineViewController.m */,
-			);
-			name = Mine;
-			path = third;
+			path = Supermarket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1027,20 +1030,22 @@
 				751622B31D4F8E48008417AC /* BnsTargetApp.strings in Resources */,
 				482163FE1D48B2A60091BDF4 /* popupmenu_bg@2x.png in Resources */,
 				482164DD1D48B2A70091BDF4 /* Util_AttachmentAdd.strings in Resources */,
-				482165291D48B5550091BDF4 /* QGSupermarkViewController.xib in Resources */,
 				482164DE1D48B2A70091BDF4 /* Util_UFTool.strings in Resources */,
 				482164B71D48B2A60091BDF4 /* MJRefresh.bundle in Resources */,
 				482164EF1D48B2A70091BDF4 /* CHCImageClipingViewController.xib in Resources */,
 				482163FF1D48B2A60091BDF4 /* readme.txt in Resources */,
 				482163F31D48B2A60091BDF4 /* Controller_MessageView.strings in Resources */,
+				751622C71D4F93C2008417AC /* QGMessageViewController.xib in Resources */,
 				482163FD1D48B2A60091BDF4 /* popupmenu_bg.png in Resources */,
 				482163E41D48B2A60091BDF4 /* Framework_HTTPHandler.strings in Resources */,
+				751622DA1D4F94BD008417AC /* QGMapViewController.xib in Resources */,
 				482163FB1D48B2A60091BDF4 /* eqmenu.png in Resources */,
+				751622D01D4F9487008417AC /* QGMineViewController.xib in Resources */,
 				482161421D48AAFD0091BDF4 /* LaunchScreen.storyboard in Resources */,
 				4821613F1D48AAFD0091BDF4 /* Assets.xcassets in Resources */,
+				751622D51D4F94A7008417AC /* QGSupermaketViewController.xib in Resources */,
 				482163FC1D48B2A60091BDF4 /* eqmenu@2x.png in Resources */,
 				482164DA1D48B2A70091BDF4 /* UWDatePickerView.xib in Resources */,
-				482165241D48B5430091BDF4 /* QGMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1066,7 +1071,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				482164EB1D48B2A70091BDF4 /* DateFomatterTool.m in Sources */,
-				4821652C1D48B5650091BDF4 /* QGThirdViewController.m in Sources */,
 				482164E61D48B2A70091BDF4 /* CHCReachability.m in Sources */,
 				482163E01D48B2A60091BDF4 /* AFURLConnectionOperation.m in Sources */,
 				482164EA1D48B2A70091BDF4 /* CustomAlertView.m in Sources */,
@@ -1081,6 +1085,8 @@
 				482164D71D48B2A60091BDF4 /* FMResultSet.m in Sources */,
 				482164F11D48B2A70091BDF4 /* NSString+Extensional.m in Sources */,
 				482164BA1D48B2A60091BDF4 /* UIScrollView+MJRefresh.m in Sources */,
+				751622D41D4F94A7008417AC /* QGSupermaketViewController.m in Sources */,
+				751622D91D4F94BD008417AC /* QGMapViewController.m in Sources */,
 				482163F51D48B2A60091BDF4 /* CHCMessageView.m in Sources */,
 				482164B01D48B2A60091BDF4 /* MJRefreshAutoStateFooter.m in Sources */,
 				482164D61D48B2A60091BDF4 /* FMDatabaseQueue.m in Sources */,
@@ -1098,14 +1104,13 @@
 				482163D91D48B2A60091BDF4 /* CHCBaseVO.m in Sources */,
 				482164B81D48B2A60091BDF4 /* MJRefreshConst.m in Sources */,
 				482164B91D48B2A60091BDF4 /* UIScrollView+MJExtension.m in Sources */,
+				751622C61D4F93C2008417AC /* QGMessageViewController.m in Sources */,
 				482164B61D48B2A60091BDF4 /* MJRefreshStateHeader.m in Sources */,
 				482163E11D48B2A60091BDF4 /* AFURLRequestSerialization.m in Sources */,
 				482164AD1D48B2A60091BDF4 /* MJRefreshHeader.m in Sources */,
 				482164F01D48B2A70091BDF4 /* CHCInputValidUtil.m in Sources */,
 				482163F41D48B2A60091BDF4 /* CHCAnnularView.m in Sources */,
 				482163E51D48B2A60091BDF4 /* CHCHttpMultiConstructor.m in Sources */,
-				482165231D48B5430091BDF4 /* QGMessageViewController.m in Sources */,
-				482165281D48B5550091BDF4 /* QGSupermarkViewController.m in Sources */,
 				482163DF1D48B2A60091BDF4 /* AFSecurityPolicy.m in Sources */,
 				482164B51D48B2A60091BDF4 /* MJRefreshNormalHeader.m in Sources */,
 				482163DB1D48B2A60091BDF4 /* AFHTTPRequestOperation.m in Sources */,
@@ -1119,7 +1124,6 @@
 				482164E81D48B2A70091BDF4 /* CHCTimeUtil.m in Sources */,
 				482164F31D48B2A70091BDF4 /* SingletonBaseManager.m in Sources */,
 				482164D31D48B2A60091BDF4 /* FMDatabase.m in Sources */,
-				4821652F1D48B58B0091BDF4 /* QGMineViewController.m in Sources */,
 				482164E11D48B2A70091BDF4 /* CHCAttachmentAdd.m in Sources */,
 				482161341D48AAFD0091BDF4 /* main.m in Sources */,
 				482163FA1D48B2A60091BDF4 /* CHCPopupMenuView.m in Sources */,
@@ -1127,6 +1131,7 @@
 				482164C41D48B2A60091BDF4 /* NSData+ImageContentType.m in Sources */,
 				482163E61D48B2A60091BDF4 /* CHCHttpRequestHandler.m in Sources */,
 				482164B21D48B2A60091BDF4 /* MJRefreshBackNormalFooter.m in Sources */,
+				751622CF1D4F9487008417AC /* QGMineViewController.m in Sources */,
 				482163DD1D48B2A60091BDF4 /* AFHTTPSessionManager.m in Sources */,
 				482164A91D48B2A60091BDF4 /* MJRefreshAutoFooter.m in Sources */,
 				482164B11D48B2A60091BDF4 /* MJRefreshBackGifFooter.m in Sources */,

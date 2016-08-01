@@ -1,23 +1,22 @@
 //
-//  QGSecondViewController.m
+//  QGSupermaketViewController.m
 //  cotton
 //
-//  Created by HEcom on 16/7/27.
+//  Created by jorgon on 01/08/16.
 //  Copyright © 2016年 Jorgon. All rights reserved.
 //
 
-#import "QGSupermarkViewController.h"
+#import "QGSupermaketViewController.h"
 
-@interface QGSupermarkViewController ()
+@interface QGSupermaketViewController ()
 
 @end
 
-@implementation QGSupermarkViewController
+@implementation QGSupermaketViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-  self.view.backgroundColor = [UIColor greenColor];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,5 +1,5 @@
 //
-//  QGMineViewController.h
+//  QGMapViewController.h
 //  cotton
 //
 //  Created by jorgon on 01/08/16.
@@ -8,6 +8,6 @@
 
 #import "CHCBaseViewController.h"
 
-@interface QGMineViewController : CHCBaseViewController
+@interface QGMapViewController : CHCBaseViewController
 
 @end

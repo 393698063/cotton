@@ -1,8 +1,8 @@
 //
-//  QGFourViewController.m
+//  QGMineViewController.m
 //  cotton
 //
-//  Created by HEcom on 16/7/27.
+//  Created by jorgon on 01/08/16.
 //  Copyright © 2016年 Jorgon. All rights reserved.
 //
 
@@ -16,8 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-  self.view.backgroundColor = [UIColor cyanColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

@@ -1,23 +1,22 @@
 //
-//  QGThirdViewController.m
+//  QGMapViewController.m
 //  cotton
 //
-//  Created by HEcom on 16/7/27.
+//  Created by jorgon on 01/08/16.
 //  Copyright © 2016年 Jorgon. All rights reserved.
 //
 
-#import "QGThirdViewController.h"
+#import "QGMapViewController.h"
 
-@interface QGThirdViewController ()
+@interface QGMapViewController ()
 
 @end
 
-@implementation QGThirdViewController
+@implementation QGMapViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-  self.view.backgroundColor = [UIColor blueColor];
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {
