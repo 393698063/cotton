@@ -1,5 +1,5 @@
 //
-//  QGSecondViewController.h
+//  QGFirstViewController.h
 //  cotton
 //
 //  Created by HEcom on 16/7/27.
@@ -8,6 +8,6 @@
 
 #import "CHCBaseViewController.h"
 
-@interface QGSecondViewController : CHCBaseViewController
+@interface QGMessageViewController : CHCBaseViewController
 
 @end

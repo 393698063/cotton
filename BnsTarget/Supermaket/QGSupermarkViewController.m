@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Jorgon. All rights reserved.
 //
 
-#import "QGSecondViewController.h"
+#import "QGSupermarkViewController.h"
 
-@interface QGSecondViewController ()
+@interface QGSupermarkViewController ()
 
 @end
 
-@implementation QGSecondViewController
+@implementation QGSupermarkViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

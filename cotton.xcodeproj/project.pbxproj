@@ -113,13 +113,14 @@
 		482164F91D48B2A70091BDF4 /* YFGIFImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 482163CC1D48B2A60091BDF4 /* YFGIFImageView.m */; };
 		482164FA1D48B2A70091BDF4 /* UITabBar+badge.m in Sources */ = {isa = PBXBuildFile; fileRef = 482163CE1D48B2A60091BDF4 /* UITabBar+badge.m */; };
 		482164FD1D48B2A70091BDF4 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 482163D41D48B2A60091BDF4 /* UIView+frame.m */; };
-		482165231D48B5430091BDF4 /* QGFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482165211D48B5430091BDF4 /* QGFirstViewController.m */; };
-		482165241D48B5430091BDF4 /* QGFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482165221D48B5430091BDF4 /* QGFirstViewController.xib */; };
-		482165281D48B5550091BDF4 /* QGSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482165261D48B5550091BDF4 /* QGSecondViewController.m */; };
-		482165291D48B5550091BDF4 /* QGSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482165271D48B5550091BDF4 /* QGSecondViewController.xib */; };
+		482165231D48B5430091BDF4 /* QGMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482165211D48B5430091BDF4 /* QGMessageViewController.m */; };
+		482165241D48B5430091BDF4 /* QGMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482165221D48B5430091BDF4 /* QGMessageViewController.xib */; };
+		482165281D48B5550091BDF4 /* QGSupermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 482165261D48B5550091BDF4 /* QGSupermarkViewController.m */; };
+		482165291D48B5550091BDF4 /* QGSupermarkViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 482165271D48B5550091BDF4 /* QGSupermarkViewController.xib */; };
 		4821652C1D48B5650091BDF4 /* QGThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4821652B1D48B5650091BDF4 /* QGThirdViewController.m */; };
-		4821652F1D48B58B0091BDF4 /* QGFourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4821652E1D48B58B0091BDF4 /* QGFourViewController.m */; };
+		4821652F1D48B58B0091BDF4 /* QGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4821652E1D48B58B0091BDF4 /* QGMineViewController.m */; };
 		482165321D48B8A70091BDF4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 482165311D48B8A70091BDF4 /* libsqlite3.0.tbd */; };
+		751622B31D4F8E48008417AC /* BnsTargetApp.strings in Resources */ = {isa = PBXBuildFile; fileRef = 751622B51D4F8E48008417AC /* BnsTargetApp.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -354,18 +355,20 @@
 		482163D41D48B2A60091BDF4 /* UIView+frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+frame.m"; sourceTree = "<group>"; };
 		482163D51D48B2A60091BDF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Util_AttachmentAdd.strings"; sourceTree = "<group>"; };
 		482163D61D48B2A60091BDF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Util_UFTool.strings"; sourceTree = "<group>"; };
-		482165201D48B5430091BDF4 /* QGFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGFirstViewController.h; sourceTree = "<group>"; };
-		482165211D48B5430091BDF4 /* QGFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGFirstViewController.m; sourceTree = "<group>"; };
-		482165221D48B5430091BDF4 /* QGFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGFirstViewController.xib; sourceTree = "<group>"; };
-		482165251D48B5550091BDF4 /* QGSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGSecondViewController.h; sourceTree = "<group>"; };
-		482165261D48B5550091BDF4 /* QGSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGSecondViewController.m; sourceTree = "<group>"; };
-		482165271D48B5550091BDF4 /* QGSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGSecondViewController.xib; sourceTree = "<group>"; };
+		482165201D48B5430091BDF4 /* QGMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMessageViewController.h; sourceTree = "<group>"; };
+		482165211D48B5430091BDF4 /* QGMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMessageViewController.m; sourceTree = "<group>"; };
+		482165221D48B5430091BDF4 /* QGMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGMessageViewController.xib; sourceTree = "<group>"; };
+		482165251D48B5550091BDF4 /* QGSupermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGSupermarkViewController.h; sourceTree = "<group>"; };
+		482165261D48B5550091BDF4 /* QGSupermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGSupermarkViewController.m; sourceTree = "<group>"; };
+		482165271D48B5550091BDF4 /* QGSupermarkViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGSupermarkViewController.xib; sourceTree = "<group>"; };
 		4821652A1D48B5650091BDF4 /* QGThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGThirdViewController.h; sourceTree = "<group>"; };
 		4821652B1D48B5650091BDF4 /* QGThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGThirdViewController.m; sourceTree = "<group>"; };
-		4821652D1D48B58B0091BDF4 /* QGFourViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGFourViewController.h; sourceTree = "<group>"; };
-		4821652E1D48B58B0091BDF4 /* QGFourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGFourViewController.m; sourceTree = "<group>"; };
+		4821652D1D48B58B0091BDF4 /* QGMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMineViewController.h; sourceTree = "<group>"; };
+		4821652E1D48B58B0091BDF4 /* QGMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMineViewController.m; sourceTree = "<group>"; };
 		482165301D48B6620091BDF4 /* AppDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDef.h; sourceTree = "<group>"; };
 		482165311D48B8A70091BDF4 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		751622B61D4F8E74008417AC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/BnsTargetApp.strings; sourceTree = "<group>"; };
+		751622B71D4F8ECB008417AC /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/BnsTargetApp.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -429,6 +432,7 @@
 				4821613E1D48AAFD0091BDF4 /* Assets.xcassets */,
 				482161401D48AAFD0091BDF4 /* LaunchScreen.storyboard */,
 				482161431D48AAFD0091BDF4 /* Info.plist */,
+				751622B51D4F8E48008417AC /* BnsTargetApp.strings */,
 				482161321D48AAFD0091BDF4 /* Supporting Files */,
 			);
 			path = cotton;
@@ -865,49 +869,53 @@
 		4821651B1D48B3360091BDF4 /* BnsTarget */ = {
 			isa = PBXGroup;
 			children = (
-				4821651C1D48B36B0091BDF4 /* first */,
-				4821651D1D48B36B0091BDF4 /* four */,
-				4821651E1D48B36B0091BDF4 /* second */,
-				4821651F1D48B36B0091BDF4 /* third */,
+				4821651C1D48B36B0091BDF4 /* Message */,
+				4821651D1D48B36B0091BDF4 /* Map */,
+				4821651E1D48B36B0091BDF4 /* Supermarket */,
+				4821651F1D48B36B0091BDF4 /* Mine */,
 			);
 			path = BnsTarget;
 			sourceTree = "<group>";
 		};
-		4821651C1D48B36B0091BDF4 /* first */ = {
+		4821651C1D48B36B0091BDF4 /* Message */ = {
 			isa = PBXGroup;
 			children = (
-				482165201D48B5430091BDF4 /* QGFirstViewController.h */,
-				482165211D48B5430091BDF4 /* QGFirstViewController.m */,
-				482165221D48B5430091BDF4 /* QGFirstViewController.xib */,
+				482165201D48B5430091BDF4 /* QGMessageViewController.h */,
+				482165211D48B5430091BDF4 /* QGMessageViewController.m */,
+				482165221D48B5430091BDF4 /* QGMessageViewController.xib */,
 			);
+			name = Message;
 			path = first;
 			sourceTree = "<group>";
 		};
-		4821651D1D48B36B0091BDF4 /* four */ = {
+		4821651D1D48B36B0091BDF4 /* Map */ = {
 			isa = PBXGroup;
 			children = (
-				482165251D48B5550091BDF4 /* QGSecondViewController.h */,
-				482165261D48B5550091BDF4 /* QGSecondViewController.m */,
-				482165271D48B5550091BDF4 /* QGSecondViewController.xib */,
+				482165251D48B5550091BDF4 /* QGSupermarkViewController.h */,
+				482165261D48B5550091BDF4 /* QGSupermarkViewController.m */,
+				482165271D48B5550091BDF4 /* QGSupermarkViewController.xib */,
 			);
+			name = Map;
 			path = four;
 			sourceTree = "<group>";
 		};
-		4821651E1D48B36B0091BDF4 /* second */ = {
+		4821651E1D48B36B0091BDF4 /* Supermarket */ = {
 			isa = PBXGroup;
 			children = (
 				4821652A1D48B5650091BDF4 /* QGThirdViewController.h */,
 				4821652B1D48B5650091BDF4 /* QGThirdViewController.m */,
 			);
+			name = Supermarket;
 			path = second;
 			sourceTree = "<group>";
 		};
-		4821651F1D48B36B0091BDF4 /* third */ = {
+		4821651F1D48B36B0091BDF4 /* Mine */ = {
 			isa = PBXGroup;
 			children = (
-				4821652D1D48B58B0091BDF4 /* QGFourViewController.h */,
-				4821652E1D48B58B0091BDF4 /* QGFourViewController.m */,
+				4821652D1D48B58B0091BDF4 /* QGMineViewController.h */,
+				4821652E1D48B58B0091BDF4 /* QGMineViewController.m */,
 			);
+			name = Mine;
 			path = third;
 			sourceTree = "<group>";
 		};
@@ -1016,9 +1024,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				751622B31D4F8E48008417AC /* BnsTargetApp.strings in Resources */,
 				482163FE1D48B2A60091BDF4 /* popupmenu_bg@2x.png in Resources */,
 				482164DD1D48B2A70091BDF4 /* Util_AttachmentAdd.strings in Resources */,
-				482165291D48B5550091BDF4 /* QGSecondViewController.xib in Resources */,
+				482165291D48B5550091BDF4 /* QGSupermarkViewController.xib in Resources */,
 				482164DE1D48B2A70091BDF4 /* Util_UFTool.strings in Resources */,
 				482164B71D48B2A60091BDF4 /* MJRefresh.bundle in Resources */,
 				482164EF1D48B2A70091BDF4 /* CHCImageClipingViewController.xib in Resources */,
@@ -1031,7 +1040,7 @@
 				4821613F1D48AAFD0091BDF4 /* Assets.xcassets in Resources */,
 				482163FC1D48B2A60091BDF4 /* eqmenu@2x.png in Resources */,
 				482164DA1D48B2A70091BDF4 /* UWDatePickerView.xib in Resources */,
-				482165241D48B5430091BDF4 /* QGFirstViewController.xib in Resources */,
+				482165241D48B5430091BDF4 /* QGMessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,8 +1104,8 @@
 				482164F01D48B2A70091BDF4 /* CHCInputValidUtil.m in Sources */,
 				482163F41D48B2A60091BDF4 /* CHCAnnularView.m in Sources */,
 				482163E51D48B2A60091BDF4 /* CHCHttpMultiConstructor.m in Sources */,
-				482165231D48B5430091BDF4 /* QGFirstViewController.m in Sources */,
-				482165281D48B5550091BDF4 /* QGSecondViewController.m in Sources */,
+				482165231D48B5430091BDF4 /* QGMessageViewController.m in Sources */,
+				482165281D48B5550091BDF4 /* QGSupermarkViewController.m in Sources */,
 				482163DF1D48B2A60091BDF4 /* AFSecurityPolicy.m in Sources */,
 				482164B51D48B2A60091BDF4 /* MJRefreshNormalHeader.m in Sources */,
 				482163DB1D48B2A60091BDF4 /* AFHTTPRequestOperation.m in Sources */,
@@ -1110,7 +1119,7 @@
 				482164E81D48B2A70091BDF4 /* CHCTimeUtil.m in Sources */,
 				482164F31D48B2A70091BDF4 /* SingletonBaseManager.m in Sources */,
 				482164D31D48B2A60091BDF4 /* FMDatabase.m in Sources */,
-				4821652F1D48B58B0091BDF4 /* QGFourViewController.m in Sources */,
+				4821652F1D48B58B0091BDF4 /* QGMineViewController.m in Sources */,
 				482164E11D48B2A70091BDF4 /* CHCAttachmentAdd.m in Sources */,
 				482161341D48AAFD0091BDF4 /* main.m in Sources */,
 				482163FA1D48B2A60091BDF4 /* CHCPopupMenuView.m in Sources */,
@@ -1226,6 +1235,15 @@
 				482163D61D48B2A60091BDF4 /* zh-Hans */,
 			);
 			name = Util_UFTool.strings;
+			sourceTree = "<group>";
+		};
+		751622B51D4F8E48008417AC /* BnsTargetApp.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				751622B61D4F8E74008417AC /* en */,
+				751622B71D4F8ECB008417AC /* zh-Hans */,
+			);
+			name = BnsTargetApp.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1412,6 +1430,7 @@
 				4821615E1D48AAFD0091BDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4821615F1D48AAFD0091BDF4 /* Build configuration list for PBXNativeTarget "cottonTests" */ = {
 			isa = XCConfigurationList;
@@ -1420,6 +1439,7 @@
 				482161611D48AAFD0091BDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		482161621D48AAFD0091BDF4 /* Build configuration list for PBXNativeTarget "cottonUITests" */ = {
 			isa = XCConfigurationList;
@@ -1428,6 +1448,7 @@
 				482161641D48AAFD0091BDF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

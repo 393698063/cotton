@@ -7,10 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "QGFirstViewController.h"
-#import "QGSecondViewController.h"
+#import "QGMessageViewController.h"
+#import "QGSupermarkViewController.h"
 #import "QGThirdViewController.h"
-#import "QGFourViewController.h"
+#import "QGMineViewController.h"
 #import "UIColor+Hex.h"
 #import "AppDef.h"
 
@@ -41,17 +41,17 @@
   UITabBarController *aTabbarController = [[UITabBarController alloc]init];
   // [aTabbarController.tabBar setBackgroundColor:[UIColor colorWithHex:0xEFEFEF]];
   
-  UIViewController *firstVC = [self createViewControllerWithClassName:NSStringFromClass([QGFirstViewController class])
-                                                                title:NSLocalizedStringFromTable(@"Quatation", BnsTargetApp, nil)
+  UIViewController *firstVC = [self createViewControllerWithClassName:NSStringFromClass([QGMessageViewController class])
+                                                                title:NSLocalizedStringFromTable(@"Message", BnsTargetApp, nil)
                                                                 image:@"quatation_nor" selectedImage:@"quatation_sel"];
-  UIViewController *secondVC= [self createViewControllerWithClassName:NSStringFromClass([QGSecondViewController class])
-                                                                title:NSLocalizedStringFromTable(@"Count", BnsTargetApp, nil)
+  UIViewController *secondVC= [self createViewControllerWithClassName:NSStringFromClass([QGSupermarkViewController class])
+                                                                title:NSLocalizedStringFromTable(@"Map", BnsTargetApp, nil)
                                                                 image:@"count_nor" selectedImage:@"count_sel"];
   UIViewController *thirdVC = [self createViewControllerWithClassName:NSStringFromClass([QGThirdViewController class])
-                                                                title:NSLocalizedStringFromTable(@"Professor", BnsTargetApp, nil)
+                                                                title:NSLocalizedStringFromTable(@"Supermarket", BnsTargetApp, nil)
                                                                 image:@"expert_nor" selectedImage:@"exper_sel"];
-  UIViewController *fourthVC= [self createViewControllerWithClassName:NSStringFromClass([QGFourViewController class])
-                                                                title:NSLocalizedStringFromTable(@"Discover", BnsTargetApp, nil)
+  UIViewController *fourthVC= [self createViewControllerWithClassName:NSStringFromClass([QGMineViewController class])
+                                                                title:NSLocalizedStringFromTable(@"Mine", BnsTargetApp, nil)
                                                                 image:@"discover_nor" selectedImage:@"discover_sel"];
   
   NSMutableArray *viewControllers = [[NSMutableArray alloc]initWithObjects:

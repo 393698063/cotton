@@ -1,23 +1,23 @@
 //
-//  QGFourViewController.m
+//  QGFirstViewController.m
 //  cotton
 //
 //  Created by HEcom on 16/7/27.
 //  Copyright © 2016年 Jorgon. All rights reserved.
 //
 
-#import "QGFourViewController.h"
+#import "QGMessageViewController.h"
 
-@interface QGFourViewController ()
+@interface QGMessageViewController ()
 
 @end
 
-@implementation QGFourViewController
+@implementation QGMessageViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-  self.view.backgroundColor = [UIColor cyanColor];
+    // Do any additional setup after loading the view from its nib.
+  self.view.backgroundColor = [UIColor redColor];
 }
 
 - (void)didReceiveMemoryWarning {

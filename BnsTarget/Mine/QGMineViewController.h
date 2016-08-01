@@ -1,5 +1,5 @@
 //
-//  QGFirstViewController.h
+//  QGFourViewController.h
 //  cotton
 //
 //  Created by HEcom on 16/7/27.
@@ -8,6 +8,6 @@
 
 #import "CHCBaseViewController.h"
 
-@interface QGFirstViewController : CHCBaseViewController
+@interface QGMineViewController : CHCBaseViewController
 
 @end

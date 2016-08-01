@@ -1,5 +1,5 @@
 //
-//  QGFourViewController.h
+//  QGSecondViewController.h
 //  cotton
 //
 //  Created by HEcom on 16/7/27.
@@ -8,6 +8,6 @@
 
 #import "CHCBaseViewController.h"
 
-@interface QGFourViewController : CHCBaseViewController
+@interface QGSupermarkViewController : CHCBaseViewController
 
 @end

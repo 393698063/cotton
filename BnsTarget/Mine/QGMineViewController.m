@@ -1,23 +1,23 @@
 //
-//  QGFirstViewController.m
+//  QGFourViewController.m
 //  cotton
 //
 //  Created by HEcom on 16/7/27.
 //  Copyright © 2016年 Jorgon. All rights reserved.
 //
 
-#import "QGFirstViewController.h"
+#import "QGMineViewController.h"
 
-@interface QGFirstViewController ()
+@interface QGMineViewController ()
 
 @end
 
-@implementation QGFirstViewController
+@implementation QGMineViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
-  self.view.backgroundColor = [UIColor redColor];
+    // Do any additional setup after loading the view.
+  self.view.backgroundColor = [UIColor cyanColor];
 }
 
 - (void)didReceiveMemoryWarning {
