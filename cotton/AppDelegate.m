@@ -8,8 +8,8 @@
 
 #import "AppDelegate.h"
 #import "QGMessageViewController.h"
-#import "QGSupermarkViewController.h"
-#import "QGThirdViewController.h"
+#import "QGSupermaketViewController.h"
+#import "QGMapViewController.h"
 #import "QGMineViewController.h"
 #import "UIColor+Hex.h"
 #import "AppDef.h"
@@ -44,10 +44,10 @@
   UIViewController *firstVC = [self createViewControllerWithClassName:NSStringFromClass([QGMessageViewController class])
                                                                 title:NSLocalizedStringFromTable(@"Message", BnsTargetApp, nil)
                                                                 image:@"quatation_nor" selectedImage:@"quatation_sel"];
-  UIViewController *secondVC= [self createViewControllerWithClassName:NSStringFromClass([QGSupermarkViewController class])
+  UIViewController *secondVC= [self createViewControllerWithClassName:NSStringFromClass([QGMapViewController class])
                                                                 title:NSLocalizedStringFromTable(@"Map", BnsTargetApp, nil)
                                                                 image:@"count_nor" selectedImage:@"count_sel"];
-  UIViewController *thirdVC = [self createViewControllerWithClassName:NSStringFromClass([QGThirdViewController class])
+  UIViewController *thirdVC = [self createViewControllerWithClassName:NSStringFromClass([QGSupermaketViewController class])
                                                                 title:NSLocalizedStringFromTable(@"Supermarket", BnsTargetApp, nil)
                                                                 image:@"expert_nor" selectedImage:@"exper_sel"];
   UIViewController *fourthVC= [self createViewControllerWithClassName:NSStringFromClass([QGMineViewController class])
@@ -72,7 +72,7 @@
                                           selectedImage:(NSString *)selectedImage
 {
   CHCBaseViewController * avc = [[NSClassFromString(className) alloc] init];
-  //  avc.iTitleStr = titleStr;
+//    avc.iTitleStr = titleStr;
   UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:avc];
   UIImage * tabItemImg = [UIImage imageNamed:image];
   UIImage * tabSelectImg = [UIImage imageNamed:selectedImage];
@@ -80,8 +80,10 @@
   UITabBarItem * tabItem = [[UITabBarItem alloc] initWithTitle:tabbarTitle
                                                          image:tabItemImg
                                                  selectedImage:tabSelectImg];
-  avc.navigationController.navigationBarHidden = YES;
+//  avc.navigationController.navigationBarHidden = YES;
   [self putTabbatItemAttributes:tabItem];
+    nvc.navigationBar.topItem.title = titleStr;
+//    avc.title = titleStr;
   nvc.tabBarItem = tabItem;
   return nvc;
 }
