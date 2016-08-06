@@ -158,13 +158,13 @@ didCompleteWithError:(NSError *)error
         userInfo[AFNetworkingTaskDidCompleteAssetPathKey] = self.downloadFileURL;
     } else if (self.mutableData) {
         userInfo[AFNetworkingTaskDidCompleteResponseDataKey] = [NSData dataWithData:self.mutableData];
-      NSMutableString *dataStr = [[[NSString alloc]initWithData:[NSData dataWithData:self.mutableData] encoding:NSUTF8StringEncoding] mutableCopy];
+//      NSMutableString *dataStr = [[[NSString alloc]initWithData:[NSData dataWithData:self.mutableData] encoding:NSUTF8StringEncoding] mutableCopy];
 //      [dataStr replaceOccurrencesOfString:@"👸🏼" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, dataStr.length)];
 //      [dataStr replaceOccurrencesOfString:@"😀" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, dataStr.length)];
 //      [dataStr replaceOccurrencesOfString:@"\\n" withString:@"" options:NSLiteralSearch range:NSMakeRange(0, dataStr.length)];
       
-      NSLog(@"dataStr = %@",dataStr);
-      self.mutableData = [[dataStr dataUsingEncoding:NSUTF8StringEncoding] mutableCopy];
+//      NSLog(@"dataStr = %@",dataStr);
+//      self.mutableData = [[dataStr dataUsingEncoding:NSUTF8StringEncoding] mutableCopy];
     }
 
     if (error) {

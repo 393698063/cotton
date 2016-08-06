@@ -168,12 +168,12 @@
     return nil;
   }
   
-  [CHCHttpRequestHandler setCookie:request];
+//  [CHCHttpRequestHandler setCookie:request];
   [self beginLogWithRequest:request];
   __block NSURLSessionDataTask *task = [self uploadTaskWithStreamedRequest:request progress:nil completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
     [self endLogWithResponse:response respinseObject:responseObject error:error];
     
-    [CHCHttpRequestHandler saveCookie:request];
+//    [CHCHttpRequestHandler saveCookie:request];
     
     if (error) {
       if (failure) {
@@ -285,13 +285,13 @@
     return nil;
   }
   
-  [CHCHttpRequestHandler setCookie:request];
+//  [CHCHttpRequestHandler setCookie:request];
   [self beginLogWithRequest:request];
   __block NSURLSessionDataTask *dataTask = nil;
   dataTask = [self dataTaskWithRequest:request completionHandler:^(NSURLResponse * __unused response, id responseObject, NSError *error) {
     [self endLogWithResponse:response respinseObject:responseObject error:error];
     
-    [CHCHttpRequestHandler saveCookie:request];
+//    [CHCHttpRequestHandler saveCookie:request];
     
     if (error) {
       if (failure) {

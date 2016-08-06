@@ -24,6 +24,11 @@
            success:(void (^)(NSURLSessionDataTask *task, id responseObject))success
            failure:(void (^)(NSURLSessionDataTask *task, NSError *error))failure;
 
+- (NSURLSessionDataTask *)GET:(NSString *)aServideName
+                   parameters:(NSDictionary *)aParams
+                       sucess:(void(^)(NSURLSessionDataTask * task,id responseObject))success
+                      failurd:(void(^)(NSURLSessionDataTask * task, NSError * error))failure;
+
 - (void)cancelRequest;
 
 + (NSDictionary *)readCookie:(NSURL *)aURL;

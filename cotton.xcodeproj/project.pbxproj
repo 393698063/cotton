@@ -115,14 +115,14 @@
 		482164FD1D48B2A70091BDF4 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 482163D41D48B2A60091BDF4 /* UIView+frame.m */; };
 		482165321D48B8A70091BDF4 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 482165311D48B8A70091BDF4 /* libsqlite3.0.tbd */; };
 		751622B31D4F8E48008417AC /* BnsTargetApp.strings in Resources */ = {isa = PBXBuildFile; fileRef = 751622B51D4F8E48008417AC /* BnsTargetApp.strings */; };
-		751622C61D4F93C2008417AC /* QGMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622BA1D4F93C2008417AC /* QGMessageViewController.m */; settings = {ASSET_TAGS = (); }; };
-		751622C71D4F93C2008417AC /* QGMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622BB1D4F93C2008417AC /* QGMessageViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		751622CF1D4F9487008417AC /* QGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622CD1D4F9487008417AC /* QGMineViewController.m */; settings = {ASSET_TAGS = (); }; };
-		751622D01D4F9487008417AC /* QGMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622CE1D4F9487008417AC /* QGMineViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		751622D41D4F94A7008417AC /* QGSupermaketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622D21D4F94A7008417AC /* QGSupermaketViewController.m */; settings = {ASSET_TAGS = (); }; };
-		751622D51D4F94A7008417AC /* QGSupermaketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D31D4F94A7008417AC /* QGSupermaketViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		751622D91D4F94BD008417AC /* QGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622D71D4F94BD008417AC /* QGMapViewController.m */; settings = {ASSET_TAGS = (); }; };
-		751622DA1D4F94BD008417AC /* QGMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D81D4F94BD008417AC /* QGMapViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		751622C61D4F93C2008417AC /* QGMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622BA1D4F93C2008417AC /* QGMessageViewController.m */; };
+		751622C71D4F93C2008417AC /* QGMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622BB1D4F93C2008417AC /* QGMessageViewController.xib */; };
+		751622CF1D4F9487008417AC /* QGMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622CD1D4F9487008417AC /* QGMineViewController.m */; };
+		751622D01D4F9487008417AC /* QGMineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622CE1D4F9487008417AC /* QGMineViewController.xib */; };
+		751622D41D4F94A7008417AC /* QGSupermaketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622D21D4F94A7008417AC /* QGSupermaketViewController.m */; };
+		751622D51D4F94A7008417AC /* QGSupermaketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D31D4F94A7008417AC /* QGSupermaketViewController.xib */; };
+		751622D91D4F94BD008417AC /* QGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622D71D4F94BD008417AC /* QGMapViewController.m */; };
+		751622DA1D4F94BD008417AC /* QGMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D81D4F94BD008417AC /* QGMapViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

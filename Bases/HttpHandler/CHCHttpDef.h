@@ -38,8 +38,8 @@ static NSInteger const HC_HTTPERROR_NetworkError_flag = -20101;
 typedef void(^THC_HTTP_CompletionBlock_Succeed)(NSDictionary *aDataDic, NSString *flag, NSString *desc);
 typedef void(^THC_HTTP_CompletionBlock_Fail)(NSError *error);
 
-static NSString *const HC_HTTP_ReturnKey_flag = @"result";
-static NSString *const HC_HTTP_ReturnKey_desc = @"desc";
+static NSString *const HC_HTTP_ReturnKey_flag = @"code";
+static NSString *const HC_HTTP_ReturnKey_desc = @"message";
 
 static NSString *const HC_LocalizedstringTable_FWHTTP = @"Framework_HTTPHandler";
 #endif

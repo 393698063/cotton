@@ -9,10 +9,9 @@
 #import "CHCBaseAppDef.h"
 
 #define HC_UrlConnection_ProtocolType @"http://"
-#define HC_UrlConnection_URL @"10.0.9.232"  //@"10.0.9.232"// @"118.192.22.77" 外部环境//@"106.2.167.151"预发布 //  @"mobile.nhecom.cn" 正式环境// @"10.0.0.107" // @"10.0.9.232" // @"218.240.51.115" // @"10.0.1.208" // @"218.240.51.115" // @"10.0.1.26" // @"220.181.105.91" //
-#define HC_UrlConnection_Port @"38080" //@"7088"预发布 //@"38080" //    @"80线上端口"//@"8089"// @"18031" // @"8033" //
-#define HC_UrlConnection_Service @"/mobile-1.0-SNAPSHOT"//
-#define HC_UrlConnection_UploadService @"/statServer-1.0"//测试上传服务
+#define HC_UrlConnection_URL @"dc.cncotton.com/mobileapp"
+//#define HC_UrlConnection_Port @"38080" //@"7088"预发布 //@"38080" //    @"80线上端口"//@"8089"// @"18031" // @"8033" //
+//#define HC_UrlConnection_Service @"/mobile-1.0-SNAPSHOT"//
 
 #define HC_UrlConnection_FileProtocolType @"http://"
 #define HC_UrlConnection_FileURL @"10.0.9.232"  //@"10.0.15.29" // @"101.200.72.78" //  @"pic.nhecom.cn" 线上环境// @"10.0.9.232" // @"10.0.1.26" // @"220.181.105.91" //

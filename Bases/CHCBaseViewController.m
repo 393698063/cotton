@@ -637,6 +637,69 @@ forRowAtIndexPath:(NSIndexPath *)indexPath
   }
   
 }
+- (void)getMethod:(NSString *)aServiceName
+       parameters:(id)aParams
+        comletion:(THC_ReqCompletionBlock)completion
+{
+  id reqData = nil;
+  reqData = aParams;
+  if (reqData)
+  {
+    CHCHttpRequestHandler *aHandler = [self creatHttpHandler];
+    [self shouldPostRequest:aHandler];
+    
+    //声明成功过返回Block
+    void (^ aSucceed)(NSURLSessionDataTask *task, id responseObject) =
+    ^(NSURLSessionDataTask *task, id responseObject)
+    {
+      [self willFinishPostRrequest:aHandler succeed:YES];
+      
+      //请求成功
+      NSString *flag = [responseObject objectForKey:HC_HTTP_ReturnKey_flag];
+      NSString *desc = [responseObject objectForKey:HC_HTTP_ReturnKey_desc];
+      
+      //flag 为空串或者nil，构造error返回。
+      NSError *error = nil;
+      if ( !flag )
+      {
+        flag = @"-1";
+        NSString *domain = NSLocalizedStringFromTable(@"HTTPFlagError", HC_LocalizedstringTable_FWHTTP, nil);
+        NSString *userInfo = [NSString stringWithFormat:@"The return flag is \"%@\"",flag];
+        error = [NSError errorWithDomain:domain
+                                    code:HC_HTTPERROR_FlagNilOrEmptyError_code
+                                userInfo:@{HC_HTTPERROR_FlagNilOrEmptyError_userinfo:userInfo}];
+      }
+      
+      //desc为nil转化为空串。
+      if (!desc)
+      {
+        desc = @"";
+      }
+      
+      //返回block
+      completion( [flag integerValue], desc, error, responseObject );
+      
+      [self didFinishPostRrequest:aHandler succeed:YES];
+      
+    };
+    
+    //声明失败返回Block
+    void (^ aFailure)(NSURLSessionDataTask *task, NSError *error) =
+    ^(NSURLSessionDataTask *task, NSError *error)
+    {
+      [self willFinishPostRrequest:aHandler succeed:YES];
+      
+      NSString *domain = NSLocalizedStringFromTable(@"HTTPConnectError", HC_LocalizedstringTable_FWHTTP, nil);
+      NSError *newError = [NSError errorWithDomain:domain code:error.code userInfo:error.userInfo];
+      completion( HC_HTTPERROR_NetworkError_flag, domain, newError, nil );
+      
+      [self didFinishPostRrequest:aHandler succeed:NO];
+      
+    };
+    [aHandler GET:aServiceName parameters:aParams sucess:aSucceed failurd:aFailure];
+    [self didPostRequest:aHandler];
+  }
+}
 
 #pragma mark 网络请求切面处理
 - (void)shouldPostRequest:(CHCHttpRequestHandler *)aHandler

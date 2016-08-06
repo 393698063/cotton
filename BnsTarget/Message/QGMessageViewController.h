@@ -11,3 +11,7 @@
 @interface QGMessageViewController : CHCBaseViewController
 
 @end
+
+@interface QGMessageController : CHCBaseController
+- (void)testTheUrl;
+@end

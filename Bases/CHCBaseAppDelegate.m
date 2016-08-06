@@ -13,53 +13,21 @@
 @implementation CHCBaseAppDelegate
 @synthesize iWindow;
 
-//- (void)configureAPIKey
-//{
-//  if ([LacationApiKey length] == 0)
-//  {
-//    NSString *reason = [NSString stringWithFormat:@"apiKey为空，请检查key是否正确设置。"];
-//    
-//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:reason delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-//    
-//    [alert show];
-//  }
-//  
-//  [MAMapServices sharedServices].apiKey = (NSString *)LacationApiKey;
-//  [AMapLocationServices sharedServices].apiKey = (NSString *)LacationApiKey;
-//}
-
-//- (void)umengTrack
-//{
-//  [MobClick setAppVersion:XcodeAppVersion]; //参数为NSString * 类型,自定义app版本信息，如果不设置，默认从CFBundleVersion里取
-//  [MobClick setLogEnabled:YES];
-//  UMConfigInstance.appKey = HC_Share_UMAppKey;
-//  UMConfigInstance.secret = @"secretstringaldfkals_zhufuda";
-//  //渠道默认为appStore default: "App Store"*/
-////  UMConfigInstance.channelId = HCPG_APPStoreChanle;
-//  //发送模式默认为batch
-////  UMConfigInstance.ePolicy = BATCH;
-//  [MobClick startWithConfigure:UMConfigInstance];
-//}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-//  [self umengTrack];
-//  [self configureAPIKey];
-//  [CHCSharedManager registShare];
-//  [[LocationManager sharedLocationManager] gecodeLocationCompeletionBlock:^(CLLocation *location, AMapLocationReGeocode *regeocode, NSError *error) {
-//    
-//  }];
   NSDictionary *lastHttpConnectInfoDic = nil;//[[NSUserDefaults standardUserDefaults] objectForKey:HC_UrlConnection_Info_Key];
   if ( lastHttpConnectInfoDic == nil )
   {
     lastHttpConnectInfoDic = @{
                                HC_UrlConnection_ProtocolType_Key:HC_UrlConnection_ProtocolType,
                                HC_UrlConnection_URL_Key:HC_UrlConnection_URL,
-                               HC_UrlConnection_Port_Key:HC_UrlConnection_Port,
+//                               HC_UrlConnection_Port_Key:HC_UrlConnection_Port,
                                HC_UrlConnection_FileProtocolType_Key:HC_UrlConnection_FileProtocolType,
                                HC_UrlConnection_FileURL_Key:HC_UrlConnection_FileURL,
                                HC_UrlConnection_FilePort_Key:HC_UrlConnection_FilePort,
-                               HC_UrlConnection_Service_Key:HC_UrlConnection_Service};
+//                               HC_UrlConnection_Service_Key:HC_UrlConnection_Service
+                               };
     
     [[NSUserDefaults standardUserDefaults] setObject:lastHttpConnectInfoDic forKey:HC_UrlConnection_Info_Key];
     [[NSUserDefaults standardUserDefaults] synchronize];

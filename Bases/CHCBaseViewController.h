@@ -245,7 +245,18 @@
 - (void)postMethod:(NSString *)aServiceName
         parameters:(id)aParams
         completion:(THC_ReqCompletionBlock)completion;
-
+/*!
+ @method
+ @abstract 发送请求，可同时调用多次并行发送请求
+ @discussion
+ @param aServiceName 方法名，可以不带URL和端口。若aServiceName带URL和端口，则优先被使用。
+ @param aParams 参数，支持dic，VO，
+ @param completion 请求完成返回Block
+ @result
+ */
+- (void)getMethod:(NSString *)aServiceName
+       parameters:(id)aParams
+        comletion:(THC_ReqCompletionBlock)completion;
 /*!
  @method
  @abstract 将要发送Http请求，可由子类复写，展示spinner

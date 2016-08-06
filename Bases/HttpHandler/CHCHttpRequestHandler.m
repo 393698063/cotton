@@ -147,12 +147,11 @@ static NSTimeInterval const CH_HTTPRequest_TimeoutInterval = 15.0f;
   //初始化属性http url
   NSString *connectProtocal = [connectionDic objectForKey:HC_UrlConnection_ProtocolType_Key];
   NSString *connectUrl = [connectionDic objectForKey:HC_UrlConnection_URL_Key];
-  NSString *connectPort = [connectionDic objectForKey:HC_UrlConnection_Port_Key];
+//  NSString *connectPort = [connectionDic objectForKey:HC_UrlConnection_Port_Key];
   
-  NSString *urlStr = [NSString stringWithFormat:@"%@%@:%@",
+  NSString *urlStr = [NSString stringWithFormat:@"%@%@",
                       connectProtocal,
-                      connectUrl,
-                      connectPort];
+                      connectUrl];
   NSURL *url= [NSURL URLWithString:urlStr];
   return url;
 }
@@ -185,18 +184,18 @@ static NSTimeInterval const CH_HTTPRequest_TimeoutInterval = 15.0f;
   [aRequestManager.requestSerializer setValue:@"text/plain; charset=UTF-8" forHTTPHeaderField:@"Content-Type"];
   
   //设置请求信息中的数据填充方式。否则服务器会以默认方式（好像是key，value对以及&分割填充数据）
-  [aRequestManager.requestSerializer setQueryStringSerializationWithBlock:
-   ^NSString *(NSURLRequest *request, id parameters, NSError *__autoreleasing *error)
-   {
-     NSMutableString *mutableParam = [NSMutableString stringWithFormat:@"%@",parameters];
-//     [mutableParam replaceOccurrencesOfString:@"\n" withString:@"%0a" options:NSLiteralSearch range:NSMakeRange(0, mutableParam.length)];
-//     [mutableParam replaceOccurrencesOfString:@"\r" withString:@"%0d" options:NSLiteralSearch range:NSMakeRange(0, mutableParam.length)];
-//     [mutableParam replaceOccurrencesOfString:@" " withString:@"%20" options:NSLiteralSearch range:NSMakeRange(0, mutableParam.length)];
-     
-     NSString *params = [NSString stringWithFormat:@"%@",mutableParam];
-     HCLog(@"请求的Json:%@\n%@\n\n",[params class],params);
-     return params;
-   }];
+//  [aRequestManager.requestSerializer setQueryStringSerializationWithBlock:
+//   ^NSString *(NSURLRequest *request, id parameters, NSError *__autoreleasing *error)
+//   {
+//     NSMutableString *mutableParam = [NSMutableString stringWithFormat:@"%@",parameters];
+////     [mutableParam replaceOccurrencesOfString:@"\n" withString:@"%0a" options:NSLiteralSearch range:NSMakeRange(0, mutableParam.length)];
+////     [mutableParam replaceOccurrencesOfString:@"\r" withString:@"%0d" options:NSLiteralSearch range:NSMakeRange(0, mutableParam.length)];
+////     [mutableParam replaceOccurrencesOfString:@" " withString:@"%20" options:NSLiteralSearch range:NSMakeRange(0, mutableParam.length)];
+//     
+//     NSString *params = [NSString stringWithFormat:@"%@",mutableParam];
+//     HCLog(@"请求的Json:%@\n%@\n\n",[params class],params);
+//     return params;
+//   }];
 //    sharedInstance.securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeNone];
   
 }
@@ -265,7 +264,7 @@ static NSTimeInterval const CH_HTTPRequest_TimeoutInterval = 15.0f;
   {
     //普通的Json请求
     NSError *error = nil;
-    id reqData = [self dataConstruct:aParams error:&error];
+    id reqData = aParams;//[self dataConstruct:aParams error:&error];
     
     if (error)
     {
@@ -298,6 +297,37 @@ static NSTimeInterval const CH_HTTPRequest_TimeoutInterval = 15.0f;
 
   }
     return rtnValue;
+}
+
+- (NSURLSessionDataTask *)GET:(NSString *)aServideName
+                   parameters:(NSDictionary *)aParams
+                       sucess:(void (^)(NSURLSessionDataTask *, id))success
+                      failurd:(void (^)(NSURLSessionDataTask *, NSError *))failure
+{
+//   aParams = [self dataConstruct:aParams error:&error];
+  //传入方法名称和表体数据
+  NSURLSessionDataTask * rtnValue = [self.iHttpSessionManager GET:[[NSURL URLWithString:aServideName
+                                                                          relativeToURL:self.iBaseUrl] absoluteString]
+                                                       parameters:aParams
+                                                          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject)
+                                     {
+                                       CHCHttpCompleteVO * aSuccessVO = [[CHCHttpCompleteVO alloc] init];
+                                       aSuccessVO.iIsSucceed = YES;
+                                       aSuccessVO.iTask = task;
+                                       aSuccessVO.iResponseObject = responseObject;
+                                       aSuccessVO.iSucceedBlock = success;
+                                       [self performSelectorOnMainThread:@selector(requestFinished:)
+                                                              withObject:aSuccessVO
+                                                           waitUntilDone:YES];
+                                     }
+                                                          failure:^(NSURLSessionDataTask * _Nonnull task, NSError * _Nonnull error)
+                                     {
+                                       [self endPostReqFail:task
+                                                  withError:error
+                                                  withBlock:failure];
+                                     }];
+  FUNCEND;
+  return rtnValue;
 }
 
 + (NSDictionary *)readCookie:(NSURL *)aURL
