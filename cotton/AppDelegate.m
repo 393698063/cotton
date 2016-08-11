@@ -71,6 +71,12 @@
                                                   image:(NSString *)image
                                           selectedImage:(NSString *)selectedImage
 {
+    
+    
+    
+    
+    
+    
   CHCBaseViewController * avc = [[NSClassFromString(className) alloc] init];
 //    avc.iTitleStr = titleStr;
   UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:avc];
