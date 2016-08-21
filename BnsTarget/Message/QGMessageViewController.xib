@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QGMessageViewController">
             <connections>
+                <outlet property="iContentScroll" destination="e5i-xM-bgv" id="3Sd-T4-AAA"/>
+                <outlet property="iNavBar" destination="fUi-8r-LNG" id="hzh-gm-8os"/>
+                <outlet property="iTitleScroll" destination="MnU-Eu-Age" id="fk8-Cz-8bt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -13,7 +17,69 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUi-8r-LNG">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="05s-BW-rqo"/>
+                    </constraints>
+                    <color key="barTintColor" red="0.33333333333333331" green="0.66274509803921566" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    <textAttributes key="titleTextAttributes">
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </textAttributes>
+                    <items>
+                        <navigationItem id="27B-uY-kdQ"/>
+                    </items>
+                </navigationBar>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3B-M3-pFG">
+                    <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnU-Eu-Age">
+                            <rect key="frame" x="0.0" y="0.0" width="556" height="44"/>
+                        </scrollView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duu-Br-fxL">
+                            <rect key="frame" x="556" y="0.0" width="44" height="44"/>
+                            <color key="backgroundColor" red="1" green="0.03737783555768337" blue="0.33789830960061462" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="44" id="87O-Rs-YWO"/>
+                            </constraints>
+                            <connections>
+                                <action selector="itemButtonAction:" destination="-1" eventType="touchUpInside" id="h6o-4i-7cg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="duu-Br-fxL" secondAttribute="bottom" id="GL1-gl-DSM"/>
+                        <constraint firstItem="duu-Br-fxL" firstAttribute="leading" secondItem="MnU-Eu-Age" secondAttribute="trailing" id="KBR-sy-jHZ"/>
+                        <constraint firstItem="duu-Br-fxL" firstAttribute="top" secondItem="B3B-M3-pFG" secondAttribute="top" id="Ulj-Zg-mXQ"/>
+                        <constraint firstItem="MnU-Eu-Age" firstAttribute="top" secondItem="B3B-M3-pFG" secondAttribute="top" id="VtW-kb-P0f"/>
+                        <constraint firstAttribute="height" constant="44" id="dwj-Df-bvq"/>
+                        <constraint firstAttribute="bottom" secondItem="MnU-Eu-Age" secondAttribute="bottom" id="f3Q-sS-cud"/>
+                        <constraint firstAttribute="trailing" secondItem="duu-Br-fxL" secondAttribute="trailing" id="ooM-aQ-GgJ"/>
+                        <constraint firstItem="MnU-Eu-Age" firstAttribute="leading" secondItem="B3B-M3-pFG" secondAttribute="leading" id="sVq-Xz-M8j"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5i-xM-bgv">
+                    <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Vag-R1-d9j"/>
+                    </connections>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="B3B-M3-pFG" firstAttribute="top" secondItem="fUi-8r-LNG" secondAttribute="bottom" id="5Xv-G6-Wu7"/>
+                <constraint firstItem="fUi-8r-LNG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6Dv-ga-BWd"/>
+                <constraint firstAttribute="trailing" secondItem="fUi-8r-LNG" secondAttribute="trailing" id="6sX-Gs-MLC"/>
+                <constraint firstAttribute="bottom" secondItem="e5i-xM-bgv" secondAttribute="bottom" id="74O-6w-bx5"/>
+                <constraint firstAttribute="trailing" secondItem="e5i-xM-bgv" secondAttribute="trailing" id="Uc2-qg-qrQ"/>
+                <constraint firstItem="fUi-8r-LNG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aDb-qt-7XE"/>
+                <constraint firstItem="e5i-xM-bgv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dZt-tR-QUe"/>
+                <constraint firstAttribute="trailing" secondItem="B3B-M3-pFG" secondAttribute="trailing" id="sco-JK-8MT"/>
+                <constraint firstItem="B3B-M3-pFG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="yAk-Gq-rfb"/>
+                <constraint firstItem="e5i-xM-bgv" firstAttribute="top" secondItem="B3B-M3-pFG" secondAttribute="bottom" id="yqn-2O-aB1"/>
+            </constraints>
         </view>
     </objects>
 </document>

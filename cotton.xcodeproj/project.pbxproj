@@ -123,6 +123,10 @@
 		751622D51D4F94A7008417AC /* QGSupermaketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D31D4F94A7008417AC /* QGSupermaketViewController.xib */; };
 		751622D91D4F94BD008417AC /* QGMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 751622D71D4F94BD008417AC /* QGMapViewController.m */; };
 		751622DA1D4F94BD008417AC /* QGMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 751622D81D4F94BD008417AC /* QGMapViewController.xib */; };
+		758862B71D69610700F79FDF /* QGMessageListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 758862B61D69610700F79FDF /* QGMessageListView.m */; settings = {ASSET_TAGS = (); }; };
+		758862BB1D69633E00F79FDF /* QGMessageListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 758862B91D69633E00F79FDF /* QGMessageListCell.m */; settings = {ASSET_TAGS = (); }; };
+		758862BC1D69633E00F79FDF /* QGMessageListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 758862BA1D69633E00F79FDF /* QGMessageListCell.xib */; settings = {ASSET_TAGS = (); }; };
+		758862BF1D6967E200F79FDF /* QGMessageListVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 758862BE1D6967E200F79FDF /* QGMessageListVO.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -373,6 +377,14 @@
 		751622D61D4F94BD008417AC /* QGMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMapViewController.h; sourceTree = "<group>"; };
 		751622D71D4F94BD008417AC /* QGMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMapViewController.m; sourceTree = "<group>"; };
 		751622D81D4F94BD008417AC /* QGMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGMapViewController.xib; sourceTree = "<group>"; };
+		758862B41D65FC3E00F79FDF /* QGMessageDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QGMessageDefine.h; sourceTree = "<group>"; };
+		758862B51D69610700F79FDF /* QGMessageListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMessageListView.h; sourceTree = "<group>"; };
+		758862B61D69610700F79FDF /* QGMessageListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMessageListView.m; sourceTree = "<group>"; };
+		758862B81D69633E00F79FDF /* QGMessageListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMessageListCell.h; sourceTree = "<group>"; };
+		758862B91D69633E00F79FDF /* QGMessageListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMessageListCell.m; sourceTree = "<group>"; };
+		758862BA1D69633E00F79FDF /* QGMessageListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QGMessageListCell.xib; sourceTree = "<group>"; };
+		758862BD1D6967E200F79FDF /* QGMessageListVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QGMessageListVO.h; sourceTree = "<group>"; };
+		758862BE1D6967E200F79FDF /* QGMessageListVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QGMessageListVO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -887,6 +899,14 @@
 				751622B91D4F93C2008417AC /* QGMessageViewController.h */,
 				751622BA1D4F93C2008417AC /* QGMessageViewController.m */,
 				751622BB1D4F93C2008417AC /* QGMessageViewController.xib */,
+				758862B41D65FC3E00F79FDF /* QGMessageDefine.h */,
+				758862B51D69610700F79FDF /* QGMessageListView.h */,
+				758862B61D69610700F79FDF /* QGMessageListView.m */,
+				758862B81D69633E00F79FDF /* QGMessageListCell.h */,
+				758862B91D69633E00F79FDF /* QGMessageListCell.m */,
+				758862BA1D69633E00F79FDF /* QGMessageListCell.xib */,
+				758862BD1D6967E200F79FDF /* QGMessageListVO.h */,
+				758862BE1D6967E200F79FDF /* QGMessageListVO.m */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -1038,6 +1058,7 @@
 				751622C71D4F93C2008417AC /* QGMessageViewController.xib in Resources */,
 				482163FD1D48B2A60091BDF4 /* popupmenu_bg.png in Resources */,
 				482163E41D48B2A60091BDF4 /* Framework_HTTPHandler.strings in Resources */,
+				758862BC1D69633E00F79FDF /* QGMessageListCell.xib in Resources */,
 				751622DA1D4F94BD008417AC /* QGMapViewController.xib in Resources */,
 				482163FB1D48B2A60091BDF4 /* eqmenu.png in Resources */,
 				751622D01D4F9487008417AC /* QGMineViewController.xib in Resources */,
@@ -1106,6 +1127,7 @@
 				482164B91D48B2A60091BDF4 /* UIScrollView+MJExtension.m in Sources */,
 				751622C61D4F93C2008417AC /* QGMessageViewController.m in Sources */,
 				482164B61D48B2A60091BDF4 /* MJRefreshStateHeader.m in Sources */,
+				758862B71D69610700F79FDF /* QGMessageListView.m in Sources */,
 				482163E11D48B2A60091BDF4 /* AFURLRequestSerialization.m in Sources */,
 				482164AD1D48B2A60091BDF4 /* MJRefreshHeader.m in Sources */,
 				482164F01D48B2A70091BDF4 /* CHCInputValidUtil.m in Sources */,
@@ -1118,6 +1140,7 @@
 				482163F91D48B2A60091BDF4 /* CHCPopupMenuItem.m in Sources */,
 				482163E31D48B2A60091BDF4 /* AFURLSessionManager.m in Sources */,
 				482164E21D48B2A70091BDF4 /* CHCAttachmentVO.m in Sources */,
+				758862BB1D69633E00F79FDF /* QGMessageListCell.m in Sources */,
 				482163F61D48B2A60091BDF4 /* CHCSpinnerView.m in Sources */,
 				482161371D48AAFD0091BDF4 /* AppDelegate.m in Sources */,
 				482164AC1D48B2A60091BDF4 /* MJRefreshFooter.m in Sources */,
@@ -1142,6 +1165,7 @@
 				482164EE1D48B2A70091BDF4 /* CHCImageClipingViewController.m in Sources */,
 				482164CA1D48B2A60091BDF4 /* SDWebImageManager.m in Sources */,
 				482164D01D48B2A60091BDF4 /* UIImageView+WebCache.m in Sources */,
+				758862BF1D6967E200F79FDF /* QGMessageListVO.m in Sources */,
 				482163DE1D48B2A60091BDF4 /* AFNetworkReachabilityManager.m in Sources */,
 				482164B41D48B2A60091BDF4 /* MJRefreshGifHeader.m in Sources */,
 				482163DC1D48B2A60091BDF4 /* AFHTTPRequestOperationManager.m in Sources */,

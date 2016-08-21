@@ -228,10 +228,10 @@ static NSString *const HC_STR_MODELHANDLER = @"ModelHandler";
   }
 }
 
-//- (UIStatusBarStyle)preferredStatusBarStyle
-//{
-//  return UIStatusBarStyleLightContent;
-//}
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+  return UIStatusBarStyleLightContent;
+}
 
 #pragma mark 处理键盘监听
 - (BOOL)isNeedNoticeForKeyboard

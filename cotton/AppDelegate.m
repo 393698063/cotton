@@ -71,12 +71,6 @@
                                                   image:(NSString *)image
                                           selectedImage:(NSString *)selectedImage
 {
-    
-    
-    
-    
-    
-    
   CHCBaseViewController * avc = [[NSClassFromString(className) alloc] init];
 //    avc.iTitleStr = titleStr;
   UINavigationController * nvc = [[UINavigationController alloc] initWithRootViewController:avc];
@@ -86,7 +80,7 @@
   UITabBarItem * tabItem = [[UITabBarItem alloc] initWithTitle:tabbarTitle
                                                          image:tabItemImg
                                                  selectedImage:tabSelectImg];
-//  avc.navigationController.navigationBarHidden = YES;
+  avc.navigationController.navigationBarHidden = YES;
   [self putTabbatItemAttributes:tabItem];
     nvc.navigationBar.topItem.title = titleStr;
 //    avc.title = titleStr;
