@@ -17,6 +17,7 @@
 @dynamic iController;
 - (void)viewDidLoad {
     [super viewDidLoad];
+  
     // Do any additional setup after loading the view from its nib.
   self.view.backgroundColor = [UIColor redColor];
   [self.iController testTheUrl];
